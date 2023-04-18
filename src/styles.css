@@ -15,7 +15,8 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 62.5%; /* 1rem = 10px*/
+  padding: 0;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -26,7 +27,7 @@ html {
 body {
   background-color: var(--blanco-crema);
   font-family: 'Montserrat';
-  font-family: 'Inter';
+  /* margin: 0; */
 }
 
 a {
@@ -36,3 +37,16 @@ a {
 /* img {
   width: 100%;
 } */
+
+/* Utilidades */
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.centrar-texto {
+  text-align: center;
+}
