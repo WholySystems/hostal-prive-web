@@ -30,12 +30,42 @@ hr{
 }
 
 .footer__contact{
-    text-align: center
+    text-align: center;
+}
+
+.contact__redes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact__redes a{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.redes__icon{
+    font-size: 2em;
+    color: #FAAE2B;
+    display: flex;
+    align-items: center;
+}
+
+.contact__redes i span{
+    color: #F2F7F5;
+    font-size: small;
+    margin-left: 1em;
+    text-transform: capitalize;
+    
 }
 
 .footer__usefull{
     text-align: right;
 }
+
+.footer__usefull h2, .footer__links h2{
+    font-size: medium;
+}   
 
 .footer__copyright{
     width: 100vw;
@@ -47,6 +77,6 @@ hr{
 }
 
 .footer__links li :hover, .footer__usefull li :hover{
-    color: #565656;
+    color: #FAAE2B;
     transition: .2s ease;
 }
