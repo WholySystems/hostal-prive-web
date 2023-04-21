@@ -92,15 +92,11 @@
   display: block;
 }
 
-#check {
-  display: none;
-}
-
 .header__banner {
   padding: 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   gap: 2rem;
 }
 
@@ -109,9 +105,15 @@
   font-size: 2.5rem;
 }
 
+/* Animación */
+.typewriter::after {
+  content: "|";
+}
+
 .header__button {
+  width: 12rem;
   border: initial;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   background-color: #00473e;
   font-family: inherit;
   font-size: 1.8rem;
@@ -178,11 +180,18 @@
   .header__banner {
     padding: 2rem 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+  }
+
+  .header__button {
+    width: 200px;
+    max-height: 64px;
+    flex-basis: calc(20%);
   }
 
   .header__text {
     font-size: 4rem;
+    flex-basis: calc(80%);
   }
 }
