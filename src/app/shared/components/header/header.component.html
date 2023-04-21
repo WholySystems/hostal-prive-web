@@ -2,35 +2,37 @@
 
   <div class="container">
 
-    <nav class="nav">
+    <div class="header__container">
 
-      <div class="header__logo-container">
-        <img src="../.././../../assets/hotel-logo.jpg" alt="logo" class="header__logo">
-      </div>
 
-      <input type="checkbox" name="check" id="check">
-      <label for="check" class="bar-btn">
-        <i class="fa-solid fa-bars"></i>
-      </label>
+        <nav class="nav">
 
-      <ul class="nav__menu" >
-        <li class="nav__li"><a routerLink="/inicio" routerLinkActive="active" class="nav__link">INICIO</a></li>
-        <li class="nav__li"><a routerLink="/habitaciones" routerLinkActive="active" class="nav__link">HABITACIONES</a></li>
-        <li class="nav__li"><a routerLink="/nosotros" routerLinkActive="active" class="nav__link">NOSOTROS</a></li>
-        <li class="nav__li"><a routerLink="/contacto" routerLinkActive="active" class="nav__link">CONTACTO</a></li>
-      </ul>
+          <div class="header__logo-container">
+            <img src="../.././../../assets/hotel-logo.jpg" alt="logo" class="header__logo">
+          </div>
 
-    </nav>
+          <label for="check" class="bar-btn">
+            <i class="fa-solid fa-bars" (click)="toggleMenu()"></i>
+          </label>
 
-  <div>
-    <div class="header__banner">
-      <h1 class="header__text no-margin">Open the door for a spacious living</h1>
+          <ul class="nav__menu" [ngClass]="{'nav__menu--active': click, 'nav__menu--transition': click}" >
+            <li class="nav__li nav__li--fisrt" [ngClass]="{'nav__link--active': click}" ><a (click)="toggleMenu()" routerLink="/inicio" routerLinkActive="active" class="nav__link" >INICIO</a></li>
+            <li class="nav__li" [ngClass]="{'nav__link--active': click}" ><a (click)="toggleMenu()" routerLink="/habitaciones" routerLinkActive="active" class="nav__link" >HABITACIONES</a></li>
+            <li class="nav__li" [ngClass]="{'nav__link--active': click}" ><a (click)="toggleMenu()" routerLink="/nosotros" routerLinkActive="active" class="nav__link" >NOSOTROS</a></li>
+            <li class="nav__li nav__li--last" [ngClass]="{'nav__link--active': click}" ><a (click)="toggleMenu()" routerLink="/contacto" routerLinkActive="active" class="nav__link" >CONTACTO</a></li>
+          </ul>
 
-      <button class="header__button">Reservar ahora</button>
+        </nav>
+
+        <div class="header__banner">
+          <h1 class="header__text no-margin">Open the door for a spacious living</h1>
+
+          <button class="header__button">Reservar ahora</button>
+        </div>
     </div>
-  </div>
 
   </div>
+
 </header>
 
 
