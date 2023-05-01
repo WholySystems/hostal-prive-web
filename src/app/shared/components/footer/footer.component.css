@@ -1,82 +1,129 @@
-a{
-    text-decoration: none;
-    color: #F2F7F5;
-}
-li{
-    list-style: none;
-}
-
-hr{
-    border-color: #121212;
-    border-width: 1px;
+.containner{
+    background-color: var(--negro2);
+    color: var(--blanco-crema);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer{
-    padding: 2em 10em;
-    background-color: #121212;
-    color: #F2F7F5;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: small;
+    width: 85%;
+    margin: 2rem auto;
 }
 
-.footer__links{
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2, 25%) repeat(2, 15%);
+    justify-content: space-between;
+    gap: 1rem;
 }
 
-.footer__links li, .footer__usefull li{
-    margin-bottom: 1em;
+.titles{
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
-.footer__contact{
-    text-align: center;
-}
-
-.contact__redes{
-    display: flex;
-    justify-content: space-around;
-}
-
-.contact__redes a{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.redes__icon{
-    font-size: 2em;
-    color: #FAAE2B;
+.containner__logotipo{
     display: flex;
     align-items: center;
 }
 
-.contact__redes i span{
-    color: #F2F7F5;
-    font-size: small;
-    margin-left: 1em;
+.logotipo__logo{
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+}
+
+.logotipo__name{
+    font-size: 3rem;
+}
+
+.logotipo__name span{
+    color: var(--amarillo);
+}
+
+p{
+    font-size: 1.3rem;
+}
+.social__icon{
+    font-size: 3rem;
+    margin-right: 1rem;
+    color: var(--anaranjado);
+}
+
+/* Estilos para el contenedor encuentranos*/
+.footer__about, .footer__links, .footer__legal{
+    text-align: end;
+}
+
+.about__item{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.about__icon{
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: var(--anaranjado);
+}
+
+.containner__links, .containner__legal{
+    display: flex;
+    flex-direction: column;
+    text-transform: lowercase;
     text-transform: capitalize;
-    
 }
 
-.footer__usefull{
-    text-align: right;
+a{
+    color: #ffffff92;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 
-.footer__usefull h2, .footer__links h2{
-    font-size: medium;
-}   
-
-.footer__copyright{
-    width: 100vw;
+.copyright{
     text-align: center;
 }
 
-.copyright__text{
-    font-size: x-small;
+.copyright p {
+    font-weight: 200;
 }
 
-.footer__links li :hover, .footer__usefull li :hover{
-    color: #FAAE2B;
-    transition: .2s ease;
+.containner__links a:hover, .containner__legal a:hover, .social__icon:hover{
+    color: var(--blanco-crema);
+    transition: .5s;
+}
+
+@media (max-width: 768px) {
+    .footer{    
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__links{
+        text-align: start;
+    }
+
+    .about__item p{
+        order: -1;
+    }
+
+    .about__icon{
+        margin-right: 0;
+        margin-left: 1rem;
+    }
+
+}
+
+@media (max-width: 400px){
+    .footer{
+        grid-template-columns: 100%;
+    }   
+
+    .footer div{
+        text-align: center;
+    }
+    .about__item{
+        justify-content: center;
+    }
 }

@@ -1,28 +1,43 @@
-<div class="footer">
-    <div class="footer__links">
-        <h2>Enlaces Rapidos</h2>
-            <li><a routerLink="/inicio" routerLinkActive="active" class="links__item">Inicio</a></li>
-            <li><a routerLink="/habitaciones" routerLinkActive="active" class="links__item">Habitaciones</a></li>
-            <li><a routerLink="/nosotros" routerLinkActive="active" class="links__item">Nosotros</a></li>
-            <li><a routerLink="/contacto" routerLinkActive="active" class="links__item">Contacto</a></li>
-    </div>
-    <div class="footer__contact">
-        <h1>CONTACTANOS</h1>
-        <p>A traves de nuestras diferentes medios de comunicación!</p>
-        <div class="contact__redes">
-            <a><i class="fa-solid fa-phone redes__icon"></i>987654321</a>
-            <a href=""><i class="fa-solid fa-envelope redes__icon"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp redes__icon"></i></a>
-            <a href=""><i class="fa-brands fa-facebook redes__icon"></i></a>
+<div class="containner">
+    <div class="footer">
+        <div class="footer__information">
+            <div class="containner__logotipo">
+                <img class="logotipo__logo" src="../../../../assets/hotel-logo.jpg" alt="logo prive">
+                <h2 class="logotipo__name"><span>Hotel</span> Prive</h2>
+            </div> 
+            <p>"Colores para todos los gustos, precios para todos los bolsillos"</p>
+            <div class="containner__social">
+                <a href=""><i class="fa-brands fa-square-whatsapp social__icon"></i></a>
+                <a href=""><i class="fa-brands fa-square-facebook social__icon"></i></a>
+            </div>
+        </div>
+        <div class="footer__about">
+            <h3 class="about__title titles">Encuentrenos</h3>
+            <div class="containner__about">
+                <li class="about__item"><i class="fa-solid fa-location-dot about__icon"></i><p>Av. El ejercito 144 - Ayacucho</p></li>
+                <li class="about__item"><i class="fa-solid fa-phone about__icon" ></i><p>987654321</p></li>
+                <li class="about__item"><i class="fa-solid fa-envelope about__icon"></i><p>hotelprive@gmail.com</p></li>
+            </div>
+        </div>
+        <div class="footer__links">
+            <h3 class="links__title titles">Enlaces</h3>
+            <div class="containner__links">
+                <a routerLink="/" routerLinkActive="active" class="nav__link" >inicio</a>
+                <a routerLink="/habitaciones" routerLinkActive="active" class="nav__link" >habitaciones</a>
+                <a routerLink="/nosotros" routerLinkActive="active" class="nav__link" >nosotros</a>
+                <a routerLink="/contacto" routerLinkActive="active" class="nav__link" >contacto</a>
+            </div>
+        </div>
+        <div class="footer__legal">
+            <h3 class="legal__title titles">Legal</h3>
+            <div class="containner__legal">
+                <a routerLink="/" routerLinkActive="active" class="legal__item" >Politicas</a>
+                <a routerLink="/" routerLinkActive="active" class="legal__item" >Privacidad</a>
+            </div>
         </div>
     </div>
-    <div class="footer__usefull">
-        <h2>Legal</h2>
-        <li><a routerLink="/inicio" routerLinkActive="active" class="links__item">Politicas de privacidad</a></li>
-        <li><a routerLink="/inicio" routerLinkActive="active" class="links__item">Politicas del hotel</a></li>
-    </div>
-    <div class="footer__copyright">
+    <div class="copyright">
         <hr>
-        <span class="copyright__text">© 2023 Wholy Systems</span>
+        <p>© Wholy Systems</p>
     </div>
 </div>

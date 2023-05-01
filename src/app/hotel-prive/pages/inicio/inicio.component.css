@@ -1,13 +1,11 @@
 .presentation{
   display: flex;
   flex-direction: column;
-  
-
 }
 .service{
   
   display: flex;
-  width: 50em ;
+  width: 60%;
   justify-content: space-around;
   margin: 3em auto;
   align-items: center;
@@ -15,6 +13,7 @@
 .item__service{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
 
 }
