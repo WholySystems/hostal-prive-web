@@ -60,7 +60,7 @@ p{
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .about__icon{
@@ -96,7 +96,7 @@ a{
 }
 
 @media (max-width: 768px) {
-    .footer{    
+    .footer{
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -118,7 +118,7 @@ a{
 @media (max-width: 400px){
     .footer{
         grid-template-columns: 100%;
-    }   
+    }
 
     .footer div{
         text-align: center;

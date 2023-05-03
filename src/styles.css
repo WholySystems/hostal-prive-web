@@ -33,7 +33,7 @@ body {
 .container{
   max-width: 200rem;
   width: 85%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 a {

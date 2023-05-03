@@ -1,0 +1,53 @@
+/* NOSOTROS */
+
+/* Container */
+.nosotros {
+  background-color: #121212;
+}
+
+.nosotros__container {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nosotros__letras {
+  /* padding: 5rem; */
+  /* background-color: orange; */
+}
+
+.nosotros__titulo {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nosotros__line {
+  width: 50%;
+  border: 0.2rem solid #ff7500;
+  border-radius: 0.25rem;
+}
+
+.nosotros__texto {
+  color: #fff;
+}
+
+/* Imagen */
+.nosotros__imagen {
+}
+
+
+/* AYACUCHO */
+
+.nosotros--color {
+  background-color: #00473E;
+}
+
+.nosotros__line--small {
+  width: 30%;
+}
