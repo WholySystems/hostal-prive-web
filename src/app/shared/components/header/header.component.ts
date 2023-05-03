@@ -14,6 +14,10 @@ export class HeaderComponent {
     if (event.target.innerWidth < 768) {
       this.click = false;
     }
+
+    console.log(event.target.innerWidth);
+    console.log(event.target.innerHeight);
+
   }
 
   ngAfterViewInit() {
@@ -46,5 +50,6 @@ export class HeaderComponent {
 
   public toggleMenu() {
     this.click = !this.click;
+    console.log(this.click);
   }
 }
