@@ -49,6 +49,7 @@
   background: rgba(0, 0, 0, 0.85);
 
   position: fixed;
+  z-index: 9;
   width: 100%;
   top: 9rem;
   right: 0;

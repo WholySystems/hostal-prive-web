@@ -15,8 +15,8 @@ export class HeaderComponent {
       this.click = false;
     }
 
-    console.log(event.target.innerWidth);
-    console.log(event.target.innerHeight);
+    // console.log(event.target.innerWidth);
+    // console.log(event.target.innerHeight);
 
   }
 
@@ -50,6 +50,5 @@ export class HeaderComponent {
 
   public toggleMenu() {
     this.click = !this.click;
-    console.log(this.click);
   }
 }

@@ -1,1 +1,17 @@
-<p>habitaciones works!</p>
+<div class="container tarjeta-container">
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-5">
+
+      <div *ngFor="let habitacion of habitaciones" class="col">
+        <div class="card">
+          <img [src]="habitacion.foto" class="card-img-top" [alt]="'Habitacion ' + habitacion.id">
+          <div class="card-body">
+            <h5 class="card-title">Habitacion {{ habitacion.id }}</h5>
+            <p class="card-text">{{habitacion.description}}</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+</div>
