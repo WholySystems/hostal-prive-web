@@ -14,9 +14,14 @@
   gap: 3rem;
 }
 
+.nosotros__container--reverse {
+  flex-direction: column-reverse;
+}
+
 .nosotros__letras {
-  /* padding: 5rem; */
-  /* background-color: orange; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .nosotros__titulo {
@@ -28,6 +33,7 @@
 }
 
 .nosotros__line {
+  opacity: 1;
   width: 50%;
   border: 0.2rem solid #ff7500;
   border-radius: 0.25rem;
@@ -35,19 +41,64 @@
 
 .nosotros__texto {
   color: #fff;
-}
-
-/* Imagen */
-.nosotros__imagen {
+  font-size: 1.4rem;
 }
 
 
 /* AYACUCHO */
 
 .nosotros--color {
-  background-color: #00473E;
+  background-color: #00473e;
 }
 
 .nosotros__line--small {
   width: 30%;
+}
+
+@media screen and (min-width: 768px) {
+  .nosotros__container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0rem;
+    padding: 0;
+  }
+
+  .nosotros__imagen {
+    display: none;
+  }
+
+  .nosotros__imagen-container {
+    background-image: url(../../../../assets/nosotros-imagen.webp);
+    height: 50rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .nosotros__texto {
+    font-size: 1.6rem;
+  }
+
+  .nosotros__letras--derecho {
+    padding-right: 15%;
+  }
+
+  .nosotros__letras--izquierdo {
+    padding-left: 15%;
+    text-align: right;
+  }
+
+  .nosotros__line--small {
+    display: inline-block;
+    position: relative;
+    right: 0;
+  }
+
+  .nosotros__titulo--mg {
+    margin-bottom: 0;
+  }
+
+
+
+
 }
