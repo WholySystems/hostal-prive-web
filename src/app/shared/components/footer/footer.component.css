@@ -1,21 +1,21 @@
-.containner{
+.container{
+    display: grid;
+    grid-template-areas: 
+        "hotel hotel hotel"
+        "direc links legal"
+        "copy copy copy"
+    ;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer{
+    width: 85%;
     background-color: var(--negro2);
     color: var(--blanco-crema);
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.footer{
-    width: 85%;
-    margin: 2rem auto;
-}
-
-.footer{
-    display: grid;
-    grid-template-columns: repeat(2, 25%) repeat(2, 15%);
-    justify-content: space-between;
-    gap: 1rem;
 }
 
 .titles{
@@ -26,6 +26,8 @@
 .containner__logotipo{
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .logotipo__logo{
@@ -53,7 +55,14 @@ p{
 
 /* Estilos para el contenedor encuentranos*/
 .footer__about, .footer__links, .footer__legal{
-    text-align: end;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.footer__information{
+    grid-area: hotel;
+    margin: 2rem auto;
+    text-align: center;
 }
 
 .about__item{
@@ -61,6 +70,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    justify-content: center;
+    margin-top: 0;
 }
 
 .about__icon{
@@ -83,7 +94,9 @@ a{
 }
 
 .copyright{
+    display: block;
     text-align: center;
+    grid-area: copy;
 }
 
 .copyright p {
@@ -96,34 +109,11 @@ a{
 }
 
 @media (max-width: 768px) {
-    .footer{
-        grid-template-columns: repeat(2, 1fr);
-    }
+    
 
-    .footer__links{
-        text-align: start;
+    .container{
+        display: block;
     }
-
-    .about__item p{
-        order: -1;
-    }
-
-    .about__icon{
-        margin-right: 0;
-        margin-left: 1rem;
-    }
-
 }
 
-@media (max-width: 400px){
-    .footer{
-        grid-template-columns: 100%;
-    }
 
-    .footer div{
-        text-align: center;
-    }
-    .about__item{
-        justify-content: center;
-    }
-}
