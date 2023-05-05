@@ -48,8 +48,10 @@
 
 .reason__container{
   display: grid;
-  grid-template-columns: 37% 50%;
+  grid-template-columns: 40% 50%;
   justify-content: space-between;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .motives{
@@ -79,27 +81,20 @@
   font-size: 2rem;
 }
 
-
-.motive__resources{
-  position: relative;
-}
-
-.motive__resources img{
-  object-fit: cover;
-}
-
 .image1{
   position: absolute;
-  left:40%;
-  height: 100%;
+  left:70%;
+  top: 10%;
+  width: 30rem;
+  height: 40rem;
   box-shadow: -18px 0px 0px 0px var(--verde-orcuro);
 }
 .image2{
   position: absolute;
-  width: 40rem;
+  width: 30rem;
   height: 20rem;
   top: 15rem;
-  left: 0rem;
+  left: 50%;
   box-shadow: -8px 8px 11px -11px var(--verde-orcuro);
 }
 
@@ -112,10 +107,10 @@
 
 .diverse__resources{
   display: grid;
-  grid-template-columns: 27% 36% 27%;
+  grid-template-columns: 30% 35% 30%;
   grid-template-areas: "img1 img3 img4"
   "img2 img3 img5";
-  gap:3rem ;
+  gap:2.5rem ;
 }
 
 .resource__item img{
@@ -144,7 +139,6 @@
 .locate{
   display: block;
   text-align: center;
-  margin: 3rem;
 }
 
 .locate__map{
@@ -184,4 +178,84 @@
   color: var(--blando);
   padding: 2rem 2rem;
   border-radius: 1rem;
+}
+
+@media (max-width: 880px) {
+  .reason__container{
+    display: block;
+    text-align: center;
+  }
+  .motives img{
+    position: static;
+    width: 80%;
+    height: 30rem;
+    object-fit: cover;
+    margin: 2rem auto;
+  }
+
+  .item__numer{
+    margin: 1rem auto;
+  }
+
+  .diverse__resources{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .resource__item img{
+    width: 30rem;
+    height: 20rem;
+  }
+  .resource__item h4{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .locate__map{
+    display: block;
+    
+  }
+
+  .locate__map img{
+    border-radius: 4rem 4rem 0 0;
+    height: 30rem;
+  }
+  .map__info{
+    position: static;
+    width: 100%;
+    border-radius: 0 0 4rem 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .titles{
+    min-width: 30rem;
+    margin-bottom: 2rem;
+  }
+
+  .map__info{
+    flex-direction: column;
+  }
+
+  .diverse__resources{
+    display: block;
+    text-align: center;
+  }
+
+  .resource__item{
+    margin: 3rem auto;
+  }
+
+  .map__info__container{
+    display: block;
+    text-align: center;
+  }
+  .map__info__container{
+    width: 90%;
+  }
+
+  .map__info a{
+    margin-top: 2rem;
+  }
 }
