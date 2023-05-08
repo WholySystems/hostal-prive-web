@@ -16,6 +16,10 @@
     margin-bottom: 1rem;
 }
 
+.info__title{
+    color: var(--anaranjado);
+}
+
 .about__icon{
     width: 2rem;
     height: 2rem;
@@ -23,7 +27,8 @@
 }
 
 .contact__form{
-    width: 80%;
+    max-width: 40rem;
+    width: 60%;
     display: flex;
     flex-direction: column;
 }

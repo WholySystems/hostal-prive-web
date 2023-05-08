@@ -4,6 +4,8 @@
 }
 .img__fondo{
   width: 100%;
+  height: 50rem;
+  object-fit: cover;
 }
 .container{
   display: flex;
@@ -87,6 +89,7 @@
   top: 10%;
   width: 30rem;
   height: 40rem;
+  object-fit: cover;
   box-shadow: -18px 0px 0px 0px var(--verde-orcuro);
 }
 .image2{
@@ -96,26 +99,27 @@
   top: 15rem;
   left: 50%;
   box-shadow: -8px 8px 11px -11px var(--verde-orcuro);
+  object-fit: cover;
 }
 
 .diverse{
-  margin-top: 5rem;
+  margin-bottom: 10rem;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 
 .diverse__resources{
+  width: 80%;
   display: grid;
-  grid-template-columns: 30% 35% 30%;
-  grid-template-areas: "img1 img3 img4"
-  "img2 img3 img5";
-  gap:2.5rem ;
+  grid-template-columns: repeat(2,1fr);
+  gap:5% ;
+  margin: auto;
 }
 
 .resource__item img{
-  height: 20rem;
   width: 100%;
+
   object-fit: cover;
 }
 
@@ -125,14 +129,6 @@
   color: var(--gris);
 }
 
-.item3{
-  grid-area: img3;
-}
-
-.item3 img{
-  object-fit: cover;
-  height: 48rem;
-}
 
 
 
@@ -185,28 +181,23 @@
     display: block;
     text-align: center;
   }
+
   .motives img{
+    width: 100%;
+    height: 30%;
     position: static;
-    width: 80%;
-    height: 30rem;
     object-fit: cover;
     margin: 2rem auto;
+    border-radius: 4rem;
   }
 
+  .image1{
+    box-shadow: none;
+  }
   .item__numer{
     margin: 1rem auto;
   }
 
-  .diverse__resources{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .resource__item img{
-    width: 30rem;
-    height: 20rem;
-  }
   .resource__item h4{
     text-align: center;
     font-size: 2.5rem;
@@ -228,7 +219,27 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
+
+  .img__fondo{
+    height: 40rem;
+    object-fit: cover;
+  }
+
+    .container{
+      width: 85%;
+    }
+
+    .motive__item{
+      margin: 0;
+      background-color: #ff770027;
+      padding: 3rem;
+      border-radius: 4rem;
+    }
+    .resource__item img{
+      border-radius: 4rem;
+    }
+
   .titles{
     min-width: 30rem;
     margin-bottom: 2rem;
@@ -239,12 +250,9 @@
   }
 
   .diverse__resources{
-    display: block;
-    text-align: center;
-  }
-
-  .resource__item{
-    margin: 3rem auto;
+    margin-bottom: 2rem;
+    grid-template-columns: 1fr;
+    gap: 2%;
   }
 
   .map__info__container{
