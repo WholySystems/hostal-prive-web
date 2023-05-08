@@ -1,16 +1,410 @@
+<div class="container">
+  <h1 class="container__titulo">EXPLORA NUESTRAS <span class="container__titulo--naranja">HABITACIONES</span></h1>
+
+  <h2 class="container__subtitulo">ELIJA SU HABITACION A SU GUSTO</h2>
+</div>
+
 <div class="container tarjeta-container">
 
   <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-5">
 
-      <div *ngFor="let habitacion of habitaciones" class="col">
+      <!-- Card -->
+      <div class="col">
         <div class="card">
-          <img [src]="habitacion.foto" class="card-img-top" [alt]="'Habitacion ' + habitacion.id">
-          <div class="card-body">
-            <h5 class="card-title">Habitacion {{ habitacion.id }}</h5>
-            <p class="card-text">{{habitacion.description}}</p>
+
+          <!-- Carrusel -->
+          <div id="h101-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#h101-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#h101-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#h101-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="../../../../assets/images/hotel-rooms/h101-1.jpg" class="carousel-img d-block w-100" alt="Foto hotel 101-1">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../../../../assets/images/hotel-rooms/h101-2.jpg" class="carousel-img d-block w-100" alt="Foto hotel 101-2">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../../../../assets/images/hotel-rooms/h101-3.jpg" class="carousel-img d-block w-100" alt="Foto hotel 101-3">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#h101-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#h101-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
           </div>
+          <!-- Carrusel -->
+
+          <div class="card-body">
+            <h5 class="card-title">{{'habitacion 101' | uppercase}}</h5>
+            <p class="card-text">Habitación con vista calle 3 camas individuales, colchón ortopédico</p>
+            <a href="#" class="btn btn-primary">Reservar <i class="bi bi-whatsapp"> </i></a>
+          </div>
+
         </div>
       </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="col">
+        <div class="card">
+
+          <!-- Carrusel -->
+          <div id="h102-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#h102-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#h102-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="4000">
+                <img src="../../../../assets/images/hotel-rooms/h102-1.jpg" class="carousel-img d-block w-100" alt="Foto hotel 102-1">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="../../../../assets/images/hotel-rooms/h102-2.jpg" class="carousel-img d-block w-100" alt="Foto hotel 102-2">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#h102-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#h102-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+          <!-- Carrusel -->
+
+          <div class="card-body">
+            <h5 class="card-title">{{'habitacion 102' | uppercase}}</h5>
+            <p class="card-text">Habitación con vista calle 3 camas individuales, colchón ortopédico</p>
+            <a href="#" class="btn btn-primary">Reservar <i class="bi bi-whatsapp"> </i></a>
+          </div>
+
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="col">
+        <div class="card">
+
+          <!-- Carrusel -->
+          <div id="h103-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#h103-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#h103-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="../../../../assets/images/hotel-rooms/h103-1.jpg" class="carousel-img d-block w-100" alt="Foto hotel 103-1">
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="../../../../assets/images/hotel-rooms/h103-2.jpg" class="carousel-img d-block w-100" alt="Foto hotel 103-2">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#h103-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#h103-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+          <!-- Carrusel -->
+
+          <div class="card-body">
+            <h5 class="card-title">{{'habitacion 103' | uppercase}}</h5>
+            <p class="card-text">Habitación con vista calle 3 camas individuales, colchón ortopédico</p>
+            <a href="#" class="btn btn-primary">Reservar <i class="bi bi-whatsapp"> </i></a>
+          </div>
+
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="col">
+        <div class="card">
+
+          <!-- Carrusel -->
+          <div id="h104-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#h104-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#h104-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="6000">
+                <img src="../../../../assets/images/hotel-rooms/h104-1.jpg" class="carousel-img d-block w-100" alt="Foto hotel 104-1">
+              </div>
+              <div class="carousel-item" data-bs-interval="6000">
+                <img src="../../../../assets/images/hotel-rooms/h104-2.jpg" class="carousel-img d-block w-100" alt="Foto hotel 104-2">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#h104-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#h104-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+          <!-- Carrusel -->
+
+          <div class="card-body">
+            <h5 class="card-title">{{'habitacion 104' | uppercase}}</h5>
+            <p class="card-text">Habitación con vista calle 3 camas individuales, colchón ortopédico</p>
+            <a href="#" class="btn btn-primary">Reservar <i class="bi bi-whatsapp"> </i></a>
+          </div>
+
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="col">
+        <div class="card">
+
+          <!-- Carrusel -->
+          <div id="h105-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#h105-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#h105-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3500">
+                <img src="../../../../assets/images/hotel-rooms/h105-1.jpg" class="carousel-img d-block w-100" alt="Foto hotel 105-1">
+              </div>
+              <div class="carousel-item" data-bs-interval="3500">
+                <img src="../../../../assets/images/hotel-rooms/h105-2.jpg" class="carousel-img d-block w-100" alt="Foto hotel 105-2">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#h105-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#h105-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+          <!-- Carrusel -->
+
+          <div class="card-body">
+            <h5 class="card-title">{{'habitacion 105' | uppercase}}</h5>
+            <p class="card-text">Habitación con vista calle 3 camas individuales, colchón ortopédico</p>
+            <a href="#" class="btn btn-primary">Reservar <i class="bi bi-whatsapp"> </i></a>
+          </div>
+
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="col">
+        <div class="card">
+
+          <!-- Carrusel -->
+          <div id="h106-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#h106-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#h106-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#h106-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="../../../../assets/images/hotel-rooms/h106-1.jpg" class="carousel-img d-block w-100" alt="Foto hotel 106-1">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../../../../assets/images/hotel-rooms/h106-2.jpg" class="carousel-img d-block w-100" alt="Foto hotel 106-2">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../../../../assets/images/hotel-rooms/h106-3.jpg" class="carousel-img d-block w-100" alt="Foto hotel 106-3">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#h106-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#h106-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+          <!-- Carrusel -->
+
+          <div class="card-body">
+            <h5 class="card-title">{{'habitacion 106' | uppercase}}</h5>
+            <p class="card-text">Habitación con vista calle 3 camas individuales, colchón ortopédico</p>
+            <a href="#" class="btn btn-primary">Reservar <i class="bi bi-whatsapp"> </i></a>
+          </div>
+
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="col">
+        <div class="card">
+
+          <!-- Carrusel -->
+          <div id="h107-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#h107-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#h107-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="4500">
+                <img src="../../../../assets/images/hotel-rooms/h107-1.jpg" class="carousel-img d-block w-100" alt="Foto hotel 107-1">
+              </div>
+              <div class="carousel-item" data-bs-interval="4500">
+                <img src="../../../../assets/images/hotel-rooms/h107-2.jpg" class="carousel-img d-block w-100" alt="Foto hotel 107-2">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#h107-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#h107-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+          <!-- Carrusel -->
+
+          <div class="card-body">
+            <h5 class="card-title">{{'habitacion 107' | uppercase}}</h5>
+            <p class="card-text">Habitación con vista calle 3 camas individuales, colchón ortopédico</p>
+            <a href="#" class="btn btn-primary">Reservar <i class="bi bi-whatsapp"> </i></a>
+          </div>
+
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="col">
+        <div class="card">
+
+          <!-- Carrusel -->
+          <div id="h108-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#h108-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#h108-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#h108-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#h108-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5500">
+                <img src="../../../../assets/images/hotel-rooms/h108-1.jpg" class="carousel-img d-block w-100" alt="Foto hotel 108-1">
+              </div>
+              <div class="carousel-item" data-bs-interval="5500">
+                <img src="../../../../assets/images/hotel-rooms/h108-2.jpg" class="carousel-img d-block w-100" alt="Foto hotel 108-2">
+              </div>
+              <div class="carousel-item" data-bs-interval="5500">
+                <img src="../../../../assets/images/hotel-rooms/h108-3.jpg" class="carousel-img d-block w-100" alt="Foto hotel 108-3">
+              </div>
+              <div class="carousel-item" data-bs-interval="5500">
+                <img src="../../../../assets/images/hotel-rooms/h108-3.jpg" class="carousel-img d-block w-100" alt="Foto hotel 108-3">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#h108-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#h108-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+          <!-- Carrusel -->
+
+          <div class="card-body">
+            <h5 class="card-title">{{'habitacion 108' | uppercase}}</h5>
+            <p class="card-text">Habitación con vista calle 3 camas individuales, colchón ortopédico</p>
+            <a href="#" class="btn btn-primary">Reservar <i class="bi bi-whatsapp"> </i></a>
+          </div>
+
+        </div>
+      </div>
+      <!-- Card -->
+
+      <!-- Card -->
+      <div class="col">
+        <div class="card">
+
+          <!-- Carrusel -->
+          <div id="h109-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#h109-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#h109-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#h109-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="6500">
+                <img src="../../../../assets/images/hotel-rooms/h109-1.jpg" class="carousel-img d-block w-100" alt="Foto hotel 109-1">
+              </div>
+              <div class="carousel-item" data-bs-interval="6500">
+                <img src="../../../../assets/images/hotel-rooms/h109-2.jpg" class="carousel-img d-block w-100" alt="Foto hotel 109-2">
+              </div>
+              <div class="carousel-item" data-bs-interval="6500">
+                <img src="../../../../assets/images/hotel-rooms/h109-3.jpg" class="carousel-img d-block w-100" alt="Foto hotel 109-3">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#h109-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#h109-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+          <!-- Carrusel -->
+
+          <div class="card-body">
+            <h5 class="card-title">{{'habitacion 109' | uppercase}}</h5>
+            <p class="card-text">Habitación con vista calle 3 camas individuales, colchón ortopédico</p>
+            <a href="#" class="btn btn-primary">Reservar <i class="bi bi-whatsapp"> </i></a>
+          </div>
+
+        </div>
+      </div>
+      <!-- Card -->
 
   </div>
 

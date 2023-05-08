@@ -3,15 +3,39 @@
     <div class="nosotros__container">
       <div class="col-md-7 nosotros__letras nosotros__letras--derecho">
         <div class="">
-          <h2 class="nosotros__titulo">Acerca de nosotros</h2>
+          <h2 class="nosotros__titulo">Sobre nosotros</h2>
           <hr class="nosotros__line">
         </div>
 
-        <p class="nosotros__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero ut, dignissimos debitis sapiente tempora omnis corporis. Optio cum qui rerum facilis saepe praesentium repudiandae aperiam, quaerat corrupti hic. Accusantium, similique? Lorem ipsum dolor sit, amet consectetur adipisicing eliiditate, dolores dolorem assumenda reprehenderit. Enim harum vitae in nisi illo facilis. Id</p>
+        <p class="nosotros__texto">En Privé, creemos que los pequeños detalles marcan la diferencia. Desde la decoración elegante hasta el servicio personalizado, todo ha sido diseñado para garantizar que su estancia con nosotros sea lo más cómoda y memorable posible. ¡Esperamos darle la bienvenida pronto a nuestro hotel!</p>
       </div>
 
       <div class="col-md-5 nosotros__imagen-container">
-        <img class="nosotros__imagen" src="../../../../assets/nosotros-imagen.webp" alt="Nosotros imagen">
+
+        <!-- <img class="nosotros__imagen" src="../../../../assets/images/nosotros/hotel.jpg" alt="Nosotros imagen"> -->
+        <div id="hotel-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hotel-carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hotel-carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="./assets/images/nosotros/hotel1.jpg" class="carousel-img d-block w-100" alt="Nosotros imagen 1">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./assets/images/nosotros/hotel2.jpg" class="carousel-img d-block w-100" alt="Nosotros imagen 2">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#hotel-carrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#hotel-carrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
       </div>
     </div>
   </div>
@@ -22,7 +46,39 @@
     <div class="nosotros__container nosotros__container--reverse">
 
       <div class="col-md-5 nosotros__imagen-container">
-        <img class="nosotros__imagen" src="../../../../assets/nosotros-imagen.webp" alt="Nosotros imagen">
+        <!-- <img class="nosotros__imagen" src="./assets/hotel2.jpg" alt="Nosotros imagen"> -->
+
+        <div id="ayacucho-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#ayacucho-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#ayacucho-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#ayacucho-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#ayacucho-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="../../../../assets/images/nosotros/ayacucho1.jpg" class="carousel-img d-block w-100" alt="Foto Ayacucho 1">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="../../../../assets/images/nosotros/ayacucho2.jpg" class="carousel-img d-block w-100" alt="Foto Ayacucho 2">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="../../../../assets/images/nosotros/ayacucho3.jpg" class="carousel-img d-block w-100" alt="Foto Ayacucho 3">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="../../../../assets/images/nosotros/ayacucho4.jpg" class="carousel-img d-block w-100" alt="Foto Ayacucho 4">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#ayacucho-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#ayacucho-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
       </div>
 
       <div class="col-md-7 nosotros__letras nosotros__letras--izquierdo">
@@ -31,7 +87,7 @@
           <hr class="nosotros__line nosotros__line--small">
         </div>
 
-        <p class="nosotros__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero ut, dignissimos debitis sapiente tempora omnis corporis. Optio cum qui rerum facilis saepe praesentium repudiandae aperiam, quaerat corrupti hic. Accusantium, similique? Lorem ipsum dolor sit, amet consectetur adipisicing eliiditate, dolores dolorem assumenda reprehenderit. Enim harum vitae in nisi illo facilis. Id!</p>
+        <p class="nosotros__texto">Ayacucho es una ciudad en Perú conocida por sus iglesias coloniales, arte popular, gastronomía y festivales religiosos, como la Semana Santa. Es un destino imperdible para aquellos interesados en la historia, cultura y tradiciones peruanas.</p>
       </div>
 
     </div>

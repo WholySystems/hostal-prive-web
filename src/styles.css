@@ -33,7 +33,7 @@ body {
 
 .container{
   max-width: 200rem;
-  width: 85%;
+  width: 95%;
   /* margin: 0 auto; */
 }
 
@@ -70,6 +70,18 @@ img {
 
 .centrar-texto {
   text-align: center;
+}
+
+@media (min-width: 576px) {
+  .container{
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container{
+    width: 85%;
+  }
 }
 
 

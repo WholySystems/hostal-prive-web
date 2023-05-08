@@ -44,6 +44,9 @@
   font-size: 1.4rem;
 }
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: black;
+}
 
 /* AYACUCHO */
 
@@ -63,16 +66,9 @@
     padding: 0;
   }
 
-  .nosotros__imagen {
-    display: none;
-  }
-
-  .nosotros__imagen-container {
-    background-image: url(../../../../assets/nosotros-imagen.webp);
-    height: 50rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  .carousel-img {
+    min-height: 40rem;
+    max-height: min-content;
   }
 
   .nosotros__texto {
@@ -96,5 +92,26 @@
 
   .nosotros__titulo--mg {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nosotros__titulo {
+    font-size: 3.5rem;
+  }
+
+  .nosotros__texto {
+    font-size: 2rem;
+  }
+}
+
+
+@media screen and (min-width: 1400px) {
+  .nosotros__titulo {
+    font-size: 4rem;
+  }
+
+  .nosotros__texto {
+    font-size: 2.4rem;
   }
 }

@@ -18,9 +18,13 @@
   padding-top: 1.5rem;
 }
 
+.header__logo-img {
+  width: 7rem;
+  /* border-radius: 50%; */
+}
 .header__logo {
-  width: 6rem;
-  border-radius: 50%;
+  /* width: 6rem; */
+  /* border-radius: 50%; */
 }
 
 .header__toogle{
@@ -131,8 +135,8 @@
     display: none;
   }
 
-  .header__logo {
-    width: 8rem;
+  .header__logo-img {
+    width: 10rem;
   }
 
   .header__menu-list {
