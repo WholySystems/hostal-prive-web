@@ -74,7 +74,7 @@
 }
 
 .item__numer p{
- color: aliceblue;
+  color: var(--blando);
  font-weight: bold;
   margin: auto;
 }
@@ -119,7 +119,6 @@
 
 .resource__item img{
   width: 100%;
-
   object-fit: cover;
 }
 
@@ -250,6 +249,7 @@
   }
 
   .diverse__resources{
+    width: 100%;
     margin-bottom: 2rem;
     grid-template-columns: 1fr;
     gap: 2%;
