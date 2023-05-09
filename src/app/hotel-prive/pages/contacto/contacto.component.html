@@ -9,14 +9,16 @@
                 <li class="about__item"><i class="fa-solid fa-envelope about__icon"></i><p>hotelprive.ayp@gmail.com</p></li>
             </div>
         </div>
-        <form class="contact__form" action="">
-            <label for="nombre">Tu nombre</label>
-            <input type="text" name="nombre">
-            <label for="motivo">Motivo</label>
-            <input type="text" name="motivo">
-            <label for="mensaje">Comentario Adicional</label>
-            <textarea name="mensaje" id="" cols="30" rows="4"></textarea>
-            <button>Enviar <i class="fa-brands fa-whatsapp"></i></button>
-        </form>
+        <div>
+            <div class="contact__form">
+                <label for="nombre">Tu nombre</label>
+                <input id="name" type="text" name="nombre">
+                <label for="motivo">Motivo</label>
+                <input id="motivo" type="text" name="motivo">
+                <label for="mensaje">Comentario Adicional</label>
+                <textarea name="mensaje" id="comentario" cols="30" rows="4"></textarea>
+                <a class="button" id="redirect" (click)="enviar_sms()" >Enviar <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
     </div>
 </div>
