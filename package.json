@@ -10,7 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "delete:docs": "del-cli ./docs",
-    "copy:dist": "copyfiles ./dist/hostal-prive-web/* ./docs -f"
+    "copy:dist": "xcopy .\\dist\\hostal-prive-web .\\docs /s /e /y /i"
   },
   "private": true,
   "dependencies": {
