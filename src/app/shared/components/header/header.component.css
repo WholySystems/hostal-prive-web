@@ -5,7 +5,6 @@
 
 .container{
   max-width: 200rem;
-  /* width: 90%; */
 }
 
 /* nav */
@@ -20,11 +19,6 @@
 
 .header__logo-img {
   width: 7rem;
-  /* border-radius: 50%; */
-}
-.header__logo {
-  /* width: 6rem; */
-  /* border-radius: 50%; */
 }
 
 .header__toogle{
@@ -37,7 +31,6 @@
   color: #05201c;
   transition: 0.2s;
 }
-
 
 
 /* Header menu list */
@@ -105,6 +98,7 @@
   text-align: center;
   font-weight: bold;
   font-size: 3rem;
+  height: 180px;
 
 }
 
@@ -129,6 +123,23 @@
 
 
 /* Responsive */
+@media screen and (min-width: 316px) {
+  .header__text {
+    height: 144px;
+  }
+}
+
+@media screen and (min-width: 387px) {
+  .header__text {
+    height: 108px;
+  }
+}
+
+@media screen and (min-width: 643px) {
+  .header__text {
+    height: 72px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .header__toogle {
@@ -173,9 +184,35 @@
   .header__text {
     text-align: initial;
     font-size: 3.5rem;
+    height: 126px;
   }
 
+  /* .header__btn {
+    width: 119px;
+  } */
+
 }
+
+@media screen and (min-width: 891px) {
+  .header__text {
+    height: 84px;
+  }
+
+  /* .header__btn {
+    width: 150px;
+  } */
+}
+
+@media screen and (min-width: 1529px) {
+  .header__text {
+    height: initial;
+  }
+
+  .header__btn {
+    width: initial;
+  }
+}
+
 
 
 
