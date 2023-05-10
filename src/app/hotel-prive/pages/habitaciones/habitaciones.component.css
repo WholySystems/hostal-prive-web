@@ -12,14 +12,31 @@
 }
 
 .container__subtitulo {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-style: italic;
+}
+
+.container__texto {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 1rem;
 }
 
 .tarjeta-container {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+.container__span {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.container__spa--orange {
+  color: #FF7500;
+}
+
+/* Card */
 
 .card {
   border-radius: 1rem;
@@ -54,6 +71,7 @@
 
 .card-text {
   font-size: 18px;
+  text-align: center;
 }
 
 
@@ -73,3 +91,5 @@
   background-color: #dd6a06;
   border-color: #dd6a06;
 }
+
+/* Card */

@@ -5,6 +5,7 @@ import { HabitacionesComponent } from './pages/habitaciones/habitaciones.compone
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { RouterModule } from '@angular/router';
+import { IconsServiciosComponent } from './components/icons-servicios/icons-servicios.component';
 
 
 
@@ -14,6 +15,7 @@ import { RouterModule } from '@angular/router';
     HabitacionesComponent,
     NosotrosComponent,
     ContactoComponent,
+    IconsServiciosComponent,
   ],
   imports: [
     CommonModule,
