@@ -61,6 +61,7 @@
     padding: 1rem;
     border-radius: 1rem;
     cursor: pointer;
+    text-align: center;
 }
 
 .button:hover{
