@@ -9,7 +9,11 @@
   --negro2: #121212;
   --gris: #565656;
 
-  --fuentePrincipal: font-family: 'Montserrat';
+  --header: #202124;
+  --header-font-color: #0D6EFD;
+  --header-button-hover: #064eb9;
+
+  --fuente-principal: 'Montserrat', sans-serif;;
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
