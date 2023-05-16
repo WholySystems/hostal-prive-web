@@ -7,10 +7,7 @@ import { Component, HostListener } from '@angular/core';
 })
 export class HeaderComponent {
   public click: boolean = false;
-  public text1: string = 'Descubre el encanto de hospedarte con nosotros';
-  public text2: string = 'Bienvenido a tu escape perfecto';
-  public text3: string = 'Vive un experiencia inolvidable en nuestro hotel';
-  public text4: string = 'Descubre el encanto de hospedarte con nosotros';
+  public text1: string = 'Sofisticación y elegancia de alto nivel';
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
