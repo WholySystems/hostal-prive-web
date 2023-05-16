@@ -19,7 +19,7 @@ export class InicioComponent implements OnInit {
       if (indiceProximaImagen >= imagenes.length) {
         indiceProximaImagen = 0;
       }
-      imagenActiva.addEventListener('transitionend', function() {
+      imagenActiva!.addEventListener('transitionend', function() {
           imagenActiva.classList.remove('active');
           imagenes[indiceProximaImagen].classList.add('active');
         });
