@@ -18,13 +18,13 @@
 }
 
 .info__title{
-    color: var(--anaranjado);
+    color: #0D6EFD;
 }
 
 .about__icon{
     width: 2rem;
     height: 2rem;
-    color: var(--header-button-hover);
+    color: #FF7500;
 }
 
 .contact__form{
@@ -56,16 +56,16 @@
     width: 10rem;
     margin: 2rem 0;
     border: none;
-    background-color: var( --header-button-hover);
-    color: var(--blando);
+    background-color: #0D6EFD;
+    color: #FFF;
     padding: 1rem;
     border-radius: 1rem;
     cursor: pointer;
     text-align: center;
 }
 
-.button:hover{
-  background-color: #021310;
+.contact__form .button:hover{
+  background-color: #0548ac;
 }
 
 @media (max-width: 850px){
