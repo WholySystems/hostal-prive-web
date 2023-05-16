@@ -26,7 +26,7 @@
 
 .nosotros__titulo {
   margin-bottom: 1rem;
-  color: #fff;
+  color: var(--blanco);
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -40,7 +40,7 @@
 }
 
 .nosotros__texto {
-  color: #fff;
+  color: var(--blanco);
   font-size: 1.4rem;
 }
 

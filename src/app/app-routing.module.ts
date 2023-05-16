@@ -10,11 +10,12 @@ const routes: Routes = [
   { path: 'habitaciones', component: HabitacionesComponent },
   { path: 'nosotros', component: NosotrosComponent },
   { path: 'contacto', component: ContactoComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'inicio' },
   { path: '**', redirectTo: 'inicio' },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true})],
+  imports: [RouterModule.forRoot(routes)], //, { useHash: true}
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
