@@ -12,10 +12,10 @@ export class InicioComponent implements OnInit {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
     function cambiarImagen() {
-      var imagenes = document.querySelectorAll('.main');
-      var imagenActiva = document.querySelector('.main.active') as HTMLDivElement;
-      var indiceImagenActiva = Array.prototype.indexOf.call(imagenes, imagenActiva);
-      var indiceProximaImagen = indiceImagenActiva + 1;
+      let imagenes = document.querySelectorAll('.main');
+      let imagenActiva = document.querySelector('.main.active') as HTMLDivElement;
+      let indiceImagenActiva = Array.prototype.indexOf.call(imagenes, imagenActiva);
+      let indiceProximaImagen = indiceImagenActiva + 1;
       if (indiceProximaImagen >= imagenes.length) {
         indiceProximaImagen = 0;
       }
