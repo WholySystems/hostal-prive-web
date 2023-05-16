@@ -49,7 +49,7 @@ p{
 .social__icon{
     font-size: 3rem;
     margin-right: 1rem;
-    color: var(--anaranjado);
+    color: #0D6EFD;
 }
 
 /* Estilos para el contenedor encuentranos*/
@@ -73,7 +73,7 @@ p{
 .about__icon{
     font-size: 2rem;
     margin-right: 1rem;
-    color: var(--anaranjado);
+    color: #0D6EFD;
 }
 
 .containner__links, .containner__legal{
