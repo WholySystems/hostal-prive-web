@@ -12,8 +12,8 @@
 
 .footer{
     width: 85%;
-    background-color: var(--negro2);
-    color: var(--blanco-crema);
+    background-color: var(--text3);
+    color: var(--text1);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -22,6 +22,7 @@
 .titles{
     font-size: 1.6rem;
     font-weight: 500;
+    margin-bottom: 1.5rem;
 }
 
 .containner__logotipo{
@@ -35,21 +36,20 @@
     width: 12rem;
 }
 
-.logotipo__name{
-    font-size: 3rem;
-}
-
-.logotipo__name span{
-    color: var(--amarillo);
-}
-
 p{
     font-size: 1.3rem;
 }
+
 .social__icon{
     font-size: 3rem;
     margin-right: 1rem;
-    color: #0D6EFD;
+}
+
+.ws{
+    color: rgb(21, 77, 133);
+}
+.fb{
+    color:rgb(24, 119, 21);
 }
 
 /* Estilos para el contenedor encuentranos*/
@@ -71,9 +71,7 @@ p{
 }
 
 .about__icon{
-    font-size: 2rem;
     margin-right: 1rem;
-    color: #0D6EFD;
 }
 
 .containner__links, .containner__legal{
@@ -84,7 +82,7 @@ p{
 }
 
 a{
-    color: #ffffff92;
+    color: var(--text1);
     font-size: 1.3rem;
     margin-bottom: 1rem;
 }
@@ -95,12 +93,9 @@ a{
     grid-area: copy;
 }
 
-.copyright p {
-    font-weight: 200;
-}
 
 .containner__links a:hover, .containner__legal a:hover, .social__icon:hover{
-    color: var(--blanco-crema);
+    color: var(--text2);
     transition: .5s;
 }
 

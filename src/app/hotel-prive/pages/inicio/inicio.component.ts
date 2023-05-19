@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, OnInit, HostListener} from '@angular/core';
 
 @Component({
   selector: 'hotel-prive-inicio',
@@ -6,27 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inicio.component.css']
 })
 
-export class InicioComponent implements OnInit {
+export class InicioComponent implements OnInit{
+  isVisible = false;
 
-  ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
-    function cambiarImagen() {
-      var imagenes = document.querySelectorAll('.main');
-      var imagenActiva = document.querySelector('.main.active') as HTMLDivElement;
-      var indiceImagenActiva = Array.prototype.indexOf.call(imagenes, imagenActiva);
-      var indiceProximaImagen = indiceImagenActiva + 1;
-      if (indiceProximaImagen >= imagenes.length) {
-        indiceProximaImagen = 0;
-      }
-      imagenActiva!.addEventListener('transitionend', function() {
-          imagenActiva.classList.remove('active');
-          imagenes[indiceProximaImagen].classList.add('active');
-        });
-        imagenActiva.classList.remove('active');
-        imagenes[indiceProximaImagen].classList.add('active');
+  @HostListener('window:scroll', [])
+  handleScroll(): void {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const element1 = document.getElementById("title") as HTMLDivElement;
+    if(scrollTop > 500){
+      this.mover(element1)
+      console.log(scrollTop)
+      element1.style.opacity = "1";
+      element1.style.transitionDuration = "1.5s";
     }
-    setInterval(cambiarImagen, 5000);
   }
 
+  mover( element : HTMLDivElement){
+    element.style.transform = 'translateY(0rem)'
+    element.style.transition = "all";
+  }
+
+  ngOnInit(): void {
+  }
 }
