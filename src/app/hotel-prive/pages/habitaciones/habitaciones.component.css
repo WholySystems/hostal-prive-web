@@ -4,6 +4,12 @@
   text-align: center;
 }
 
+.container--color {
+  background-color: var(--negro);
+  color: white;
+  padding: 2rem;
+}
+
 .container__titulo--naranja {
   color: #FF7500;
 }
@@ -46,11 +52,11 @@
   padding: 1.5rem;
 }
 
-.card-body:hover {
+/* .card-body:hover {
   background-color: rgb(0, 71, 62);
   color: #fff;
   border-radius: 0 0 1rem 1rem;
-}
+} */
 
 .carousel-img, .carousel, .carousel-inner, .carousel-item  {
   border-radius: 1rem 1rem 0 0;
@@ -77,19 +83,20 @@
 
 .btn {
   display: block;
-  width: 100px;
+  width: 150px;
   margin: 0 auto;
   font-size: 14px;
+  border-radius: 2rem;
 }
 
 .btn-primary {
-  background-color: #FF7500;
-  border-color: #FF7500;
+  background-color: var(--negro);
+  border-color: var(--negro);
 }
 
 .btn-primary:hover {
-  background-color: #dd6a06;
-  border-color: #dd6a06;
+  background-color: var(--negro2);
+  border-color: var(--negro2);
 }
 
 /* Card */

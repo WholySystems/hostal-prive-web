@@ -28,12 +28,12 @@ a {
 
 .header__toogle{
   font-size: 2.4rem;
-  color: var(--header-font-color);
+  color: var(--negro2);
   cursor: pointer;
 }
 
 .header__toogle:hover {
-  color: var(--blanco);
+  color: var(--gris);
   transition: 0.2s;
 }
 
@@ -76,14 +76,13 @@ a {
   color: #fff;
   font-size: 1.8rem;
   width: 100%;
-  text-transform: uppercase;
   font-weight: 600;
 }
 
 .active,
 .header__menu-link:hover {
-  color: var(--header-font-color);
-  border-bottom: 2px solid var(--header-font-color);
+  /* color: var(--header-font-color); */
+  border-bottom: 2px solid var(--blanco-crema);
   transition: 0.2s;
 }
 
@@ -98,36 +97,36 @@ a {
 }
 
 .header__text {
-  color: #F2F7F5;
+  color: var(--negro2);
   text-align: center;
   font-weight: bold;
   font-size: 3rem;
-  height: 144px;
+  /* height: 144px; */
 
 }
 
 .header__btn {
   padding: 1rem 2rem;
-  background-color: var(--header-font-color);;
-  color: #f2f7f5;
+  background-color: var(--negro);;
+  color: var(--blanco);
   font-size: 1.8rem;
   border: initial;
-  border-radius: 0.7rem;
+  border-radius: 3rem;
 }
 
 .header__btn:hover {
-  background-color: var(--header-button-hover);
+  background-color: var(--negro2);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
-.typewriter::after {
+/* .typewriter::after {
   content: "|";
-}
+} */
 
 
 /* Responsive */
-@media screen and (min-width: 286px) {
+/* @media screen and (min-width: 286px) {
   .header__text {
     height: 144px;
   }
@@ -137,7 +136,7 @@ a {
   .header__text {
     height: 72px;
   }
-}
+} */
 
 @media screen and (min-width: 768px) {
   .header__toogle {
@@ -162,13 +161,13 @@ a {
   }
 
   .header__menu-link {
-    color: var(--header-font-color);
+    color: var(--negro2);
   }
 
   .active,
   .header__menu-link:hover {
-    color: #f2f7f5;
-    border-bottom: 2px solid #f2f7f5;
+    /* color: #25b47a; */
+    border-bottom: 2px solid var(--negro2);
     transition: 0.1s;
   }
 
@@ -181,7 +180,7 @@ a {
   .header__text {
     text-align: initial;
     font-size: 3.5rem;
-    height: 126px;
+    /* height: 126px; */
   }
 
   .header__btn {
@@ -190,11 +189,11 @@ a {
 
 }
 
-@media screen and (min-width: 829px) {
+/* @media screen and (min-width: 829px) {
   .header__text {
     height: 84px;
   }
-}
+} */
 
 @media screen and (min-width: 891px) {
   .header__menu-list {
@@ -207,13 +206,6 @@ a {
     gap: 5rem;
   }
 }
-
-@media screen and (min-width: 1267px) {
-  .header__text {
-    height: initial;
-  }
-}
-
 
 
 

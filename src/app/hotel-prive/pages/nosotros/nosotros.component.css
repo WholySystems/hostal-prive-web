@@ -51,7 +51,7 @@
 /* AYACUCHO */
 
 .nosotros--color {
-  background-color: #00473e;
+  background-color: var(--negro);
 }
 
 .nosotros__line--small {

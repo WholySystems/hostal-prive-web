@@ -7,7 +7,7 @@
   justify-content: center;
   padding: 2px;
   margin: 10px;
-  border: 2px solid #FF7500;
+  border: 2px solid var(--gris);
   border-radius: 50%;
   transition: all 0.2s ease-in;
 }

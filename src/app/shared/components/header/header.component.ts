@@ -20,33 +20,33 @@ export class HeaderComponent {
 
   }
 
-  ngAfterViewInit() {
-    this.typewriterEffect();
-  }
+  // ngAfterViewInit() {
+  //   this.typewriterEffect();
+  // }
 
-  typewriterEffect() {
-    const element = document.getElementById("typewriter");
-    if (element) {
-      const text = element.innerHTML;
-      element.innerHTML = "";
-      let i = 0;
-      let speed = 60;
-      const type = () => {
-        if (i < text.length) {
-          element.innerHTML += text.charAt(i);
-          i++;
-          setTimeout(type, speed);
-        } else {
-          i = 0;
-          setTimeout(() => {
-            element.innerHTML = "";
-            type();
-          }, 1000);
-        }
-      }
-      type();
-    }
-  }
+  // typewriterEffect() {
+  //   const element = document.getElementById("typewriter");
+  //   if (element) {
+  //     const text = element.innerHTML;
+  //     element.innerHTML = "";
+  //     let i = 0;
+  //     let speed = 60;
+  //     const type = () => {
+  //       if (i < text.length) {
+  //         element.innerHTML += text.charAt(i);
+  //         i++;
+  //         setTimeout(type, speed);
+  //       } else {
+  //         i = 0;
+  //         setTimeout(() => {
+  //           element.innerHTML = "";
+  //           type();
+  //         }, 1000);
+  //       }
+  //     }
+  //     type();
+  //   }
+  // }
 
   public toggleMenu() {
     this.click = !this.click;
