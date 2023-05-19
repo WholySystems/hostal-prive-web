@@ -19,7 +19,6 @@ export class InicioComponent implements OnInit{
     const element4 = document.getElementById("numer3") as HTMLDivElement;
     if(scrollTop > 500){
       this.mover(element1);
-      console.log(scrollTop)
     } 
     if (scrollTop > 1000){
       this.mover(element2);
