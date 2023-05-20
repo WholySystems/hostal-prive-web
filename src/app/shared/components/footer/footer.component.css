@@ -95,7 +95,7 @@ a{
 
 
 .containner__links a:hover, .containner__legal a:hover, .social__icon:hover{
-    color: var(--text2);
+    color: var(--text4);
     transition: .5s;
 }
 
