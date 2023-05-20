@@ -114,9 +114,6 @@ hr{
   padding: 2rem 0;
 }
 
-.text__streaming{
-  margin-bottom: 1%;
-}
 .streaming{
   display: flex;
   justify-content: space-around;
@@ -349,11 +346,19 @@ hr{
 
     .services{
       grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: "titulo div1 div2" "titulo div3 div4" "titulo div5 div5";
+      grid-template-areas: "titulo div1 div2" "titulo div3 div4" "div5 div5 div5";
+    }
+
+    .contenedor__streaming{
+      padding: 1.5rem 0;
     }
 
     .streaming{
       flex-grow: 1;
+    }
+
+    .text__streaming{
+      margin-top: 1%;
     }
 
     .streaming img{
