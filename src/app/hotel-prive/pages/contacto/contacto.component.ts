@@ -1,11 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'hotel-prive-contacto',
   templateUrl: './contacto.component.html',
   styleUrls: ['./contacto.component.css']
 })
-export class ContactoComponent {
+export class ContactoComponent implements OnInit{
+
+  ngOnInit(): void {
+    window.scrollTo(0,0);
+  }
+
   enviar_sms(){
     const name = document.getElementById("name")  as HTMLInputElement;
     const motivo = document.getElementById("motivo")  as HTMLInputElement;
