@@ -28,6 +28,7 @@
   object-fit: cover;
 }
 
+
 .glass__promotion{
   position: absolute;
   top: 0;
@@ -37,7 +38,7 @@
   justify-content: center;
   place-items: center;
   gap: 2rem;
-  background-color: #0000001e;
+  background-color: #00000042;
   backdrop-filter: blur(5px);
   padding: 1rem 0;
 }
