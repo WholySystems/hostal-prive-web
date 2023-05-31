@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Habitacion } from '../../interfaces/hotel.interface';
 
 @Component({
@@ -6,7 +6,11 @@ import { Habitacion } from '../../interfaces/hotel.interface';
   templateUrl: './habitaciones.component.html',
   styleUrls: ['./habitaciones.component.css'],
 })
-export class HabitacionesComponent {
+export class HabitacionesComponent implements OnInit  {
+  ngOnInit(): void {
+    window.scrollTo(0,0);
+  }
+  
   // public habitaciones: Habitacion[] = [
   //   {
   //     id: 101,
